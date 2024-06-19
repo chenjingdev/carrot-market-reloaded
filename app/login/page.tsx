@@ -5,11 +5,11 @@ import FormInput from '@/components/input';
 import FormButton from '@/components/button';
 import SocialLogin from '@/components/social-login';
 import { useFormState } from 'react-dom';
-import { login } from './actions';
+import { logIn } from './actions';
 import { PASSWORD_MIN_LENGTH } from '@/lib/constants';
 
 export default function Login() {
-  const [state, dispatch] = useFormState(login, null);
+  const [state, dispatch] = useFormState(logIn, null);
 
   return (
     <div className="flex flex-col gap-10 py-8 px-6">
